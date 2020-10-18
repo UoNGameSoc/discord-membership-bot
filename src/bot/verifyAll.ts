@@ -21,9 +21,9 @@ const verifyAll = (members: Collection<Snowflake, GuildMember>, message: Message
       await member.send(
         `Hey there <@!${
           member.user.id
-        }> :wave:\nIt looks like you're membership may have expired since you last verified your membership with me.\nPlease respond with your student ID number so I can verify that you are a HackSoc member.\nIf you believe this is in error please raise a ticket in <#${
+        }> :wave:\nIt looks like you're membership may have expired since you last verified your membership with me.\nPlease respond with your student ID number so I can verify that you are a GameSoc member.\nIf you believe this is in error please contact the committee in <#${
           process.env.discordHelpChannelID as string
-        }> for help.\nThanks,\nThe HackSoc Bot.`,
+        }> for help.\nThanks,\nA GameSoc Bot.`,
       );
 
       await message.channel.send(`DM'd <@!${member.id}>.`);
