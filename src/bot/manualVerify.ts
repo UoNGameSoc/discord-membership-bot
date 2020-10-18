@@ -49,9 +49,9 @@ client.on('message', async (message) => {
     } catch (e) {
       message.channel.stopTyping();
       message.reply(
-        `An error occurred, please try again later, or raise a ticket in <#${
+        `An error occurred, please try again later, or raise ask foi help in <#${
           process.env.discordHelpChannelID as string
-        }> for help.`,
+        }>.`,
       );
       console.error(e);
       return;
